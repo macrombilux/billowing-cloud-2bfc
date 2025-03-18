@@ -1,0 +1,30 @@
+{
+  "name": "macrombi",
+  "main": "./dist/index.js",
+  "assets": {
+    "directory": "./dist"
+  },
+  "compatibility_date": "2024-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "vars": {
+    "EXAMPLE_VALUE": "example_value"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "Macrombi Depot",
+      "database_id": "4d1de1bc-173d-4af8-b8ae-a427a37ff44c"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "macrombi-customer-workflow",
+      "binding": "CUSTOMER_WORKFLOW",
+      "class_name": "CustomerWorkflow"
+    }
+  ]
+}
